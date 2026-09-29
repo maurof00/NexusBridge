@@ -1,0 +1,88 @@
+name: CrossBridge
+version: 1.2.2
+main: dev.crossbridge.spigot.CrossBridgeSpigot
+api-version: '1.21'
+author: OpenAI
+website: https://example.invalid/crossbridge
+commands:
+  gamemode:
+    description: CrossBridge replacement for the Bukkit gamemode command
+    usage: /gamemode <survival|creative|adventure|spectator> [player]
+    aliases: [gm]
+    permission: crossbridge.command.gamemode
+  fly:
+    description: Toggle flight for yourself or another player
+    usage: /fly [player]
+    permission: crossbridge.command.fly
+  teleport:
+    description: CrossBridge replacement for the Bukkit teleport command
+    usage: /teleport <player> | /teleport <player> <target> | /teleport <x> <y> <z> [yaw pitch]
+    aliases: [tp]
+    permission: crossbridge.command.tp
+  tphere:
+    description: Teleport a player to you
+    usage: /tphere <player>
+    permission: crossbridge.command.tphere
+  heal:
+    description: Restore a player's health
+    usage: /heal [player]
+    permission: crossbridge.command.heal
+  feed:
+    description: Restore a player's food
+    usage: /feed [player]
+    permission: crossbridge.command.feed
+  speed:
+    description: Set walking or flying speed
+    usage: /speed <walk|fly> <1-10> [player]
+    permission: crossbridge.command.speed
+  clear:
+    description: CrossBridge replacement for the Bukkit clear command
+    usage: /clear [player]
+    permission: crossbridge.command.clear
+  kill:
+    description: CrossBridge replacement for the Bukkit kill command
+    usage: /kill <player>
+    permission: crossbridge.command.kill
+  vanish:
+    description: Toggle vanish for a player
+    usage: /vanish [player]
+    aliases: [v]
+    permission: crossbridge.command.vanish
+  xeon:
+    description: CrossBridge network and diagnostics command
+    usage: /xeon <server|info|ping>
+    aliases: [x]
+    permission: crossbridge.use
+  bridge:
+    description: CrossBridge diagnostics
+    usage: /bridge <info|ping>
+    permission: crossbridge.use
+permissions:
+  crossbridge.use:
+    default: op
+  crossbridge.command.gamemode:
+    default: op
+  crossbridge.command.fly:
+    default: op
+  crossbridge.command.tp:
+    default: op
+  crossbridge.command.tphere:
+    default: op
+  crossbridge.command.heal:
+    default: op
+  crossbridge.command.feed:
+    default: op
+  crossbridge.command.speed:
+    default: op
+  crossbridge.command.clear:
+    default: op
+  crossbridge.command.kill:
+    default: op
+  crossbridge.command.vanish:
+    default: op
+  crossbridge.command.server:
+    default: true
+  crossbridge.command.info:
+    default: true
+  crossbridge.command.ping:
+    default: op

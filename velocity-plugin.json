@@ -1,0 +1,8 @@
+{
+  "id": "crossbridge",
+  "main": "dev.crossbridge.velocity.CrossBridgeVelocity",
+  "name": "CrossBridge",
+  "version": "1.2.2",
+  "description": "Universal XeonProxy bridge for Velocity, BungeeCord and Spigot/Paper",
+  "authors": ["OpenAI"]
+}

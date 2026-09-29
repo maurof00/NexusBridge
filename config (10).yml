@@ -1,0 +1,10 @@
+server-id: lobby
+debug: false
+shared-secret: "CHANGE-ME-please-use-a-random-secret"
+heartbeat-seconds: 5
+known-servers:
+  - lobby
+  - survival
+  - minigames
+# Replace the normal Bukkit/Spigot commands with CrossBridge implementations.
+override-bukkit-commands: true

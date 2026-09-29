@@ -1,0 +1,12 @@
+# XeonProxy / CrossBridge proxy configuration.
+# Set exactly the same secret on every backend.
+security-enabled: true
+auth-required: true
+shared-secret: "CHANGE-ME-please-use-a-random-secret"
+max-messages-per-second: 30
+invalid-packet-threshold: 5
+security-lockout-seconds: 15
+heartbeat-expiry-seconds: 20
+ping-interval-seconds: 15
+fallback-server: lobby
+debug: false
